@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+.logo-container {
+  position: relative;
+  height: 80px;
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    width: 90px;
+  }
+}
+
+.App-header {
+  background-color: #fff;
+  height: 150px;
+  padding: 20px;
+  color: #222;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+nav {
+  padding: 10px;
+  height: 30px;
+  border-bottom: 1px solid black;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 228px);
+  overflow: auto;
+}
+
+.navButton {
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #db4d3f;
+  box-shadow: 7px 7px 12px -6px rgba(0, 0, 0, 0.34);
+  text-decoration: none;
+  color: #db4d3f;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: 0;
+  &.active {
+    color: #fff;
+    background: #222;
+    border: 1px solid #db4d3f;
+  }
+}
+
+.Page1 {
+  ul {
+    text-align: left;
+  }
+}
+
+.Page2,
+.Page1 {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  transform: translateZ(0);
+  transition: all 0.5s ease;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  &.routeTransition-enter,
+  &.routeTransition-exit-active,
+  &.routeTransition-exit {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  &.routeTransition-enter-active,
+  &.routeTransition-enter-done {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
