@@ -5,22 +5,23 @@ For the project to build, **these files must exist with exact filenames** (unles
 
 You can delete or rename the other files.
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack and BuckleScript.<br>
-You can add new `scss` files anywhere in `src` and import them in your `.re` files.
+You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack and BuckleScript. You can add new `scss` files anywhere in `src` and import them in your `.re` files.
 
 ## Run the project
 
-In the project directory, you can run:
+In the project directory, you can:
 
-### `yarn install`
+### Install dependencies
 
-### `yarn start`
+`$ yarn install`
 
-Runs BuckleScript Compiler.<br>
+### Start the BuckleScript Compiler
 
-Then in a seperate tab
+`$ yarn start`
 
-### `yarn webpack`
+### Run the Webpack Development Server
+
+`$ yarn webpack`
 
 Runs Webpack and hosts your app on `http://localhost:3000`
 
